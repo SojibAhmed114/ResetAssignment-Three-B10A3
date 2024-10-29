@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>resetAssignment-03.com</title>
@@ -8,48 +8,38 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
-      rel="stylesheet"
-    />
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet"/>
     <!-- font awesome CDN link  -->
-    <script
-      src="https://kit.fontawesome.com/0b03aebe0f.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/0b03aebe0f.js" crossorigin="anonymous" ></script>
     <!-- daisyUI and Tailwind css CDN link  -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css"
-      rel="stylesheet"
-      type="text/css"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- tailwind css custom font added script link  -->
     <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            fontFamily: {
-              manrope: ["Manrope", "sans-serif"],
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        manrope: ["Manrope", "sans-serif"],
+                    },
+                    colors: {
+                    "btn-color": "#ABEF5F",
+                    heading: "#212121",
+                    "sub-heading": "#494949",
+                    },
+                },
             },
-            colors: {
-              "btn-color": "#ABEF5F",
-              heading: "#212121",
-              "sub-heading": "#494949",
-            },
-          },
-        },
-      };
+        };
     </script>
-  </head>
+</head>
 <body class="font-manrope">
     <header class="bg-slate-100">
     <!-- nav part here  -->
-    <nav class="max-w-screen-xl flex justify-between items-center border-2 border-red-100 pt-4 mx-auto px-5 md:px-10 " >
+    <nav class="max-w-screen-xl flex justify-between items-center pt-4 mx-auto px-5 md:px-10 " >
         <div>
             <a class="font-extrabold text-2xl lg:text-3xl" href="https://www.google.com" >
-            <i class="fa-solid rotate-45 text-center bg-btn-color h-8 w-8 rounded-full fa-arrow-up"></i>
-            Rinterio</a>
+            <i class="fa-solid rotate-45 text-center bg-btn-color h-8 w-8 rounded-full fa-arrow-up"></i> Rinterio</a>
         </div>
         <div class="hidden lg:block">
             <ul class="flex gap-7">
@@ -78,6 +68,16 @@
             </div>
         </div>
         </nav>
+    <!-- hero section start here  -->
+    <section class=" max-w-screen-xl pt-4 pb-5 mx-auto  px-5 md:px-10">
+        <div class="flex justify-between items-center flex-col gap-5 text-center">
+            <img  src="./assets/banner.png" alt="photo">
+            <h1 class="text-heading text-center font-extrabold text-3xl md:text-4xl lg:text-6xl">A barn house of this design has a striking appearance</h1>
+            <p class="text-sub-heading  font-bold">This barn house design combines rustic charm with modern appeal. High ceilings, large windows, and natural materials create an open, airy space. Its warm, inviting atmosphere makes it both practical and visually unique.</p>
+            <button class=" w-full md:w-auto flex items-center justify-center text-xl font-extrabold gap-1 bg-green-200 rounded-full px-5 py-3">
+            Book Consult <i class="fa-solid rotate-45 text-center bg-btn-color  h-8 w-8 rounded-full fa-arrow-up" ></i> </button>
+        </div>
+    </section>
     </header>
     <main></main>
     <footer></footer>
