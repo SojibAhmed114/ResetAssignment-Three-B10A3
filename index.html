@@ -1,38 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>resetAssignment-03.com</title>
     <!-- google font CDN link  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
     <!-- font awesome CDN link  -->
-    <script src="https://kit.fontawesome.com/0b03aebe0f.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/0b03aebe0f.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- daisyUI and Tailwind css CDN link  -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- tailwind css custom font added script link  -->
     <script>
-        tailwind.config = {
-            theme: {
-            extend: {
-                    fontFamily:{
-                        manrope:["Manrope", "sans-serif"]
-                    },
-                    colors: {
-                        'btn-color': '#ABEF5F',
-                        'heading': '#212121',
-                        'sub-heading': '#494949',
-                    }
-                }
-            }
-        }
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              manrope: ["Manrope", "sans-serif"],
+            },
+            colors: {
+              "btn-color": "#ABEF5F",
+              heading: "#212121",
+              "sub-heading": "#494949",
+            },
+          },
+        },
+      };
     </script>
-</head>
+  </head>
 <body class="font-manrope">
-
-</body>
+    <header class="bg-slate-100">
+    <!-- nav part here  -->
+    <nav class="max-w-screen-xl flex justify-between items-center border-2 border-red-100 pt-4 mx-auto px-5 md:px-10 " >
+        <div>
+            <a class="font-extrabold text-2xl lg:text-3xl" href="https://www.google.com" >
+            <i class="fa-solid rotate-45 text-center bg-btn-color h-8 w-8 rounded-full fa-arrow-up"></i>
+            Rinterio</a>
+        </div>
+        <div class="hidden lg:block">
+            <ul class="flex gap-7">
+                <li class="hover:font-bold duration-200 ease-in">Home</li>
+                <li class="hover:font-bold duration-200 ease-in">Services</li>
+                <li class="hover:font-bold duration-200 ease-in">Portfolio</li>
+                <li class="hover:font-bold duration-200 ease-in">Blogs</li>
+                <li class="hover:font-bold duration-200 ease-in">Contact Us</li>
+            </ul>
+        </div>
+        <div class="flex items-center gap-2">
+            <div class=" hidden md:inline-flex items-center gap-2">
+                <div class="flex justify-center items-center cursor-pointer text-center bg-white border h-8 w-8 rounded-full">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <div class="flex justify-center items-center cursor-pointer text-center bg-white border h-8 w-8 rounded-full" >
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+            <button class=" flex items-center justify-center text-xl font-extrabold gap-1 bg-btn-color rounded-full px-5 py-3" >
+                Book Consult <i class="fa-solid rotate-45 text-center bg-black text-white h-8 w-8 rounded-full fa-arrow-up" ></i> </button>
+            </div>
+            <div class="flex items-center gap-2 lg:hidden">
+                <div class="flex justify-center items-center cursor-pointer text-center bg-white border h-8 w-8 rounded-full">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </div>
+        </nav>
+    </header>
+    <main></main>
+    <footer></footer>
+    </body>
 </html>
